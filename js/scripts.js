@@ -1,3 +1,4 @@
+// business logic
 function myFunction() {
   // Get the snackbar DIV
   var x = document.getElementById("submit-vol");
@@ -28,3 +29,16 @@ function myFunction3() {
   // After 3 seconds, remove the show class from DIV
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
+// user logic
+$(document).ready(function() {
+  $('.donateClothes').click(function(event) {
+    event.preventDefault();
+    $(".donateClothesText").slideToggle(1000);
+    $(".donateMoneyText").hide();
+  })
+  $('.donateMoney').click(function(event) {
+    event.preventDefault();
+    $(".donateMoneyText").slideToggle(1200);
+    $(".donateClothesText").hide();
+  })
+});

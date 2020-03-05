@@ -13,132 +13,165 @@
 <body>
   <div class="bePart">
     <div class="bePartText">
-      <br>
       <p>Be a Part of Our <br> Community</p>
+      <div class="container">
+        <div class="bePartButtons">
+          <div class="row">
+            <div class="col-md-4">
+              <button type="btn"  class="btn btn-primary"><a href="index.html#landingPage">RETURN HOME</a></button>
+            </div>
+            <div class="col-md-4">
+              <button type="btn"  class="btn btn-primary"><a href="#donate">MAKE A DONATION</a></button>
+            </div>
+            <div class="col-md-4">
+              <button type="btn"  class="btn btn-primary"><a href="contactUs.html">CONTACT US</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <br><br>
   <div class="container">
-    <div class="row">
+    <div class="row" id="volunteer">
       <div class="col-md-6">
-        <img src="img/volunteericon_hands_vector.png" width="150" height="150">
+        <a href="#volunteer">
+        <img src="img/volunteericon_hands_vector.png" width="200" height="200" class="zoomVolunteer"></a>
+        <br><br>
         <div class="title">
           <h3>Sign up to be a volunteer today</h3>
         </div>
         <p>Hi, <strong>WE NEED YOU !</strong></p><br>
-        <p>Every day we get countless donations in form of: sanitary products from our donors and  individuals, pieces of clothing, and funds from organisations and the larger community. 
-          We need your assistance in handling all the materials we take in and distributing them to all the girls we support.<br> If interested in lending us a hand, kindly enter your details below to be contacted by one of our administrators: </p>
-          <form>
-            <div class="form-group">
-              <label for="name">Kindly enter your FULL NAME:</label>
-              <input type="text" class="form-control" id="name" placeholder="e.g. Jon Doe Otieno" required>
+        <p>Every day we get countless donations in form of: sanitary products from our donors and  individuals, pieces of clothing, and funds from organisations and the larger community. <br><br>
+          We need your assistance in handling all the materials we take in and distributing them to all the girls we support.<br><br> If interested in lending us a hand, kindly enter your details below to be contacted by one of our administrators: </p>
+          <div class="card-deck">
+            <div class="card">
+              <form>
+                <div class="form-group">
+                  <br>
+                  <label for="name">Kindly enter your FULL NAME:</label>
+                  <input type="text" class="form-control" id="name" placeholder="e.g. Jon Doe Otieno" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address:</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="phoneNumber">Phone Number:</label>
+                  <input type="number" class="form-control" id="phoneNumber" placeholder="+254720201070" required>
+                </div>
+                <br><br>
+                <button type="btn" onclick="myFunction()" class="btn btn-primary"><a href="#volunteer">SUBMIT</a></button>
+              </form>
+              <br>
             </div>
-            <div class="form-group">
-              <label for="email">Email Address:</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-            </div>
-            <div class="form-group">
-              <label for="phoneNumber">Phone Number:</label>
-              <input type="number" class="form-control" id="phoneNumber" placeholder="+254720201070" required>
-            </div>
-            <br><br>
-            <button type="btn" onclick="myFunction()" class="btn btn-primary"><a href="#volunteer">SUBMIT</a></button>
-          </form>
+          </div>
           <div id="submit-vol">
-            <p>We have recieved your details and are looking forward to collaborating with you.<br> We will get in touch with you soon</p>
+            <p>We have recieved your details and are looking forward<br> to collaborating with you.<br> We will get in touch with you soon</p>
           </div>
       </div>
       <div class="col-md-6">
-        <img src="img/download (2).png" width="150" height="150">
+        <a href="#volunteer">
+        <img src="img/download (2).png" width="200" height="200" class="zoomVolunteer"></a>
+        <br><br>
         <div class="title">
           <h3>Sign up your organisation</h3>
         </div>
           <p><strong>YOUR BUSINESS CAN MAKE A DIFFERENCE !</strong></p><br>
           <p>Join our movement as a partner or a sponsor.<br><br>
-            Our partners are part of our distributive network and our sponsors fund and support us.</p><br><br>
+            Our partners are part of our distributive network and our sponsors fund and support us.</p><br>
             <button type="btn" class="btn btn-primary"><a href="#partners">View our current partners and sponsors</a></button>
             <br><br>
             <p>To join us, kindly each out to us at: info@eplas.org. Or enter your business details below:</p>
-            <form>
-              <div class="form-group">
-                <label for="businessName">BUSINESS NAME:</label>
-                <input type="text" class="form-control" id="businessName" placeholder="e.g. Jua Cali Traders" required>
+            <div class="card-deck">
+              <div class="card">
+                <br>
+                <form>
+                  <div class="form-group">
+                    <label for="businessName">BUSINESS NAME:</label>
+                    <input type="text" class="form-control" id="businessName" placeholder="e.g. Jua Cali Traders" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Business Email Address:</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@business.org" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber">Telephone Number:</label>
+                    <input type="number" class="form-control" id="telephoneNumber" placeholder="(020)720 201 070" required>
+                  </div>
+                  <br><br>
+                  <button type="btn" onclick="myFunction2()" class="btn btn-primary"><a href="#organization">SIGN UP ORGANIZATION</a></button>
+                </form>
+                <br>
               </div>
-              <div class="form-group">
-                <label for="email">Business Email Address:</label>
-                <input type="email" class="form-control" id="email" placeholder="name@business.org" required>
-              </div>
-              <div class="form-group">
-                <label for="phoneNumber">Telephone Number:</label>
-                <input type="number" class="form-control" id="telephoneNumber" placeholder="(020)720 201 070" required>
-              </div>
-              <br><br>
-              <button type="btn" onclick="myFunction2()" class="btn btn-primary"><a href="#organization">SIGN UP ORGANIZATION</a></button>
-            </form>
+            </div>
             <div id="sign-up">
               <p>Thank you for signing up to support us.<br> We shall contact you soon.</p>
             </div>
         </div>
       </div>
-      <br><br>
+      <br><br><br><br><br><br>
       <div id="donate">
         <div class="title">
-          <h1>DONATE</h1>
+          <h1 class="donate">DONATE</h1>
           <h1 class="to">&</h1>
           <img src="img/download (1).png" >
         </div>
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <br>
-              <img class="donateClothes" src="img/iconfinder-014-16-512.png" width="150" height="150">
-              <h4 class="donateClothes">DONATE CLOTHES OR PADS</h4>
+              <div class="zoom">
+                <img class="donateClothes" src="img/iconfinder-014-16-512.png" width="150" height="150">
+              <h4 class="donateClothes">DONATE PADS OR CLOTHES</h4>
+              </div>
             </div>
             <div class="col-md-6">
-              <br>
-              <img class="donateMoney" src="img/189-1897713_hand-take-money-comments-hand-donation-icon.png" width="150" height="150">
+              <div class="zoom">
+                <img class="donateMoney" src="img/unnamed (1).png" width="150" height="150">
               <h4 class="donateMoney">DONATE MONEY</h4>
+              </div>
             </div>
           </div>
         </div>
+        <br><br><br>
         <div class="container donateClothesText">
           <br><br>
-          <p><strong>YOUR DONATION GOES A LONG WAY</strong><br></p>
+          <h4><strong>YOUR DONATION GOES A LONG WAY</strong><br><br></h4>
           <p>Donations of pads are distributed to the less fortunate girls that we support to ensure <br> that they live a dignified life free from period shame and period poverty.<br><br>
           Donations of clothing (preferrably t-shirts that are in good condition) are given to people who contribute large numbers of sanitary towels as appreciation.<br><br>
         Surplus clothing, of good condition, is also distributed to the less fortunate girls that we support.<br><br>
       <p>Kindly drop off donations at any of our <strong>collection centres listed below:</strong></p>
       <p>(All donations are welcome!)</p><br><br>
 
-          <div class="card-deck">
-            <div class="card">
-              <img class="card-img-top" src="img/Screenshot from 2020-03-04 12-05-44.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title"><a href="https://www.google.com/maps/dir//Kawangware+Market,+Nairobi/@-1.286817,36.7422348,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f1a2e7fcd3c25:0x42b53f5ac66f29fc!2m2!1d36.7444061!2d-1.2868865">Kawangware market</a></h5>
-                <p class="card-text">Visit our collection point at Kawangware market</p>
-                
+          <div class="maps">
+            <div class="card-deck">
+              <div class="card zoom">
+                <a href="https://www.google.com/maps/dir//Kawangware+Market,+Nairobi/@-1.286817,36.7422348,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f1a2e7fcd3c25:0x42b53f5ac66f29fc!2m2!1d36.7444061!2d-1.2868865">
+                <img class="card-img-top" src="img/Screenshot from 2020-03-04 12-05-44.png" alt="Card image cap"></a>
+                <div class="card-body">
+                  <h5 class="card-title"> <a href="https://www.google.com/maps/dir//Kawangware+Market,+Nairobi/@-1.286817,36.7422348,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f1a2e7fcd3c25:0x42b53f5ac66f29fc!2m2!1d36.7444061!2d-1.2868865">View the directions to our collection point at <strong>Kawangware Market</strong></a></h5>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="img/Screenshot from 2020-03-04 12-04-42.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title"><a href="https://www.google.com/maps/dir//Kibra+Huduma+Center,+Nairobi/@-1.3065494,36.7858449,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f10841286a543:0xdeb7df3db311f3a9!2m2!1d36.7880336!2d-1.3065494">Kibra Huduma Centre</a></h5>
-                <p class="card-text">Visit our collection point at Kibra Huduma centre</p>
-               
+              <div class="card zoom">
+                <a href="https://www.google.com/maps/dir//Kibra+Huduma+Center,+Nairobi/@-1.3065494,36.7858449,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f10841286a543:0xdeb7df3db311f3a9!2m2!1d36.7880336!2d-1.3065494">
+                <img class="card-img-top" src="img/Screenshot from 2020-03-04 12-04-42.png" alt="Card image cap"></a>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="https://www.google.com/maps/dir//Kibra+Huduma+Center,+Nairobi/@-1.3065494,36.7858449,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f10841286a543:0xdeb7df3db311f3a9!2m2!1d36.7880336!2d-1.3065494">View the directions to our collection point at <strong>Kibra Huduma Center</strong></a></h5>
+                </div>
               </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="img/Screenshot from 2020-03-04 12-05-25.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title"><a href="https://www.google.com/maps/dir//Northlands+City,+Unnamed+Road,+Ruiru/@-1.1751449,36.9526924,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f409d70ebfa83:0x9b78b92e087ebab!2m2!1d36.9548811!2d-1.1751449">Northlands Estate</a></h5>
-                <p class="card-text">Visit our collection point at Northlands estate</a></p>
+              <div class="card zoom">
+                <a href="https://www.google.com/maps/dir//Northlands+City,+Unnamed+Road,+Ruiru/@-1.1751449,36.9526924,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f409d70ebfa83:0x9b78b92e087ebab!2m2!1d36.9548811!2d-1.1751449">
+                <img class="card-img-top" src="img/Screenshot from 2020-03-04 12-05-25.png" alt="Card image cap"></a>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="https://www.google.com/maps/dir//Northlands+City,+Unnamed+Road,+Ruiru/@-1.1751449,36.9526924,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x182f409d70ebfa83:0x9b78b92e087ebab!2m2!1d36.9548811!2d-1.1751449">View the directions to our collection point at <strong>Northlands Estate</strong></a></h5>
+                </div>
               </div>
             </div>
           </div>
+          <br><br><br><br><br><br><br>
         </div>
+        <br><br>
         <div class="container donateMoneyText">
-          <br><br>
-          <p><strong>YOUR MONEY IS IN THE RIGHT HANDS</strong></p><br><br>
+          <h4><strong>YOUR MONEY IS IN THE RIGHT HANDS</strong></h4><br>
           <p>Monetary donations go into purchasing sanitary products for the ladies and facilitating our volunteers <br> with transport and other amenities as they go around the country doing their duties.<br><br>
           As a non-profit organisation, none of the funds go into our pockets.<br>
         Donations are through <strong>M-Pesa</strong> and direct deposits into our Equity <strong>Bank Account</strong>. Instructions are as below.<br><br>
@@ -187,7 +220,7 @@
         </div>
       </div>
       <div class="container">
-        <br><br><br><br><br><br>
+        <br><br><br><br>
       <div id="partners">
         <div class="title">
           <h1>OUR CURRENT PARTNERS AND SPONSORS</h1>
@@ -242,8 +275,9 @@
         <div class="col-md-3">
           <a href="index.html#landingPage">RETURN HOME</a><br><br>
           <a href="index.html#aboutUs">ABOUT US</a><br><br>
+          <a href="getInvolved.html#volunteer">VOLUNTEER</a><br><br>
           <a href="#donate">DONATE</a><br><br>
-          <a href="#contactUs">CONTACT US</a><br><br>
+          <a href="contactUs.html">CONTACT US</a><br><br>
         </div>
         <div class="col-md-3">
           <img src="img/download.png" width="200" height="130">
